@@ -27,7 +27,7 @@
             <Setter Property="Margin" Value="0 0 0 0"/>
         </Style>
         <Style TargetType="Slider">
-            <Setter Property="Margin" Value="20 4 20 10"/>
+            <Setter Property="Margin" Value="6 4 6 6"/>
         </Style>
         <Style TargetType="ListBoxItem" x:Key="trackinfo">
             <Setter Property="Margin" Value="0 12 0 11"/>
@@ -114,12 +114,20 @@
 
                 <Grid Grid.Row="2">
                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
                         <ColumnDefinition/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Slider Grid.Column="0"/>
+                    <TextBlock Grid.Column="0" Style="{StaticResource title}" Text="4.17" Margin="10 2 0 2" Padding="0"/>
                     <Slider Grid.Column="1"/>
+                    <TextBlock Grid.Column="2" Style="{StaticResource title}" Text="-4.17" Margin="0 2 0 2"/>
+                    <Button Grid.Column="3" Margin="6 0 0 2">
+                        <Image Source="Resources/btn9.png"/>
+                    </Button>
+                    <Slider Grid.Column="4"/>
                 </Grid>
             </Grid>
         </Grid>
